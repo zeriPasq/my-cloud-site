@@ -8,9 +8,10 @@ const app = express();
 
 // Настройка Cloudinary (данные берутся из настроек хостинга)
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET
+    cloud_name: 'Root', 
+    api_key: '757992179993785', 
+    api_secret: 'wJSdOtekz4LGFrP-KeUVTNh2xjM'
+});
 });
 
 const storage = new CloudinaryStorage({
